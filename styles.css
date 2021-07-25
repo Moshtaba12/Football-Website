@@ -2,10 +2,16 @@ body {
   background-color: white;
   font-family: 'Encode Sans SC', sans-serif;
 }
-
+.landing{
+  min-height:  100vh;
+  background: url("./Hex\ fade\ x\ Blood\ Moon.jpg");
+  background-size: cover;
+  padding: 0rem 5 rem;
+}
 h1 {
   color: black;
   margin-left: 20px;
+  font-family: 'Encode Sans SC', sans-serif;
 }
 
 p {
