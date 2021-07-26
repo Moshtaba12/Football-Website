@@ -2,6 +2,11 @@ body {
   background-color: white;
   font-family: 'Encode Sans SC', sans-serif;
 }
+nav{
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
 .landing{
   min-height:  100vh;
   background: url("./Hex\ fade\ x\ Blood\ Moon.jpg");
