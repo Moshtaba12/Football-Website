@@ -71,3 +71,22 @@ nav{
   transform: translateX(-50%);
 }
 
+.sidebar ul{
+  margin-top: 20px;
+}
+
+.sidebar ul li{
+  position: relative;
+  height: 75px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+}
+
+.sidebar ul li a{
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
