@@ -5,19 +5,11 @@
 }
 
 body {
-  background-color: #C7D6D5;
+  background-color: white;
   font-family: 'Encode Sans SC', sans-serif;
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-}
-
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: #6D7275;
 }
 
 .sidebar{
@@ -89,4 +81,19 @@ nav{
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: all 0.4s ease-in
+  ;
 }
+
+.sidebar ul li a i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+
+.sidebar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
