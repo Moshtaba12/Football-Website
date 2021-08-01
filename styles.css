@@ -18,12 +18,12 @@ body {
   left: 0;
   height: 100%;
   width: 240px;
-  background: black;
+  background: #fff;
   padding: 6px 14px;
 }
 
 .sidebar .logo_content .logo {
-  color: white;
+  color: #000;
   display: flex;
   height: 50px;
   width: 100%;
@@ -39,7 +39,7 @@ body {
   font-weight: 400;
 }
 .logo{
-  color: white;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 22px;
@@ -52,7 +52,7 @@ body {
 
 .sidebar #btn{
   position: absolute;
-  color: white;
+  color: #000;
   left: 90%;
   top: 6px;
   font-size: 20px;
@@ -69,20 +69,24 @@ body {
 
 .sidebar ul li{
   position: relative;
+  display: inline-block;
   height: 75px;
   width: 100%;
   margin: 0 5px;
   list-style: none;
-  line-height: 50px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .sidebar ul li a{
-  color: white;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: all 0.4s ease-in
-  ;
+  transition: all 0.4s ease-in;
 }
 
 .sidebar ul li a i{
@@ -93,7 +97,29 @@ body {
 }
 
 .sidebar ul li a:hover{
-  color: black;
-  background-color: white;
+  color: #000;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+
 }
+
+.sidebar ul li svg{
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.sidebar ul li svg rect{
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+  transition: all 1300ms;
+}
+
+.sidebar:hover ul li svg rect{
+  stroke-width: 5;
+  stroke-dasharray: 10, 310;
+  stroke-dashoffset: 33;
+} 
 
