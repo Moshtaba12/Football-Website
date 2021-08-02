@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #000;
   font-family: 'Encode Sans SC', sans-serif;
   position: relative;
   min-height: 100vh;
@@ -18,12 +18,12 @@ body {
   left: 0;
   height: 100%;
   width: 240px;
-  background: #fff;
+  background: #959A9D;
   padding: 6px 14px;
 }
 
 .sidebar .logo_content .logo {
-  color: #000;
+  color: #fff;
   display: flex;
   height: 50px;
   width: 100%;
@@ -39,7 +39,7 @@ body {
   font-weight: 400;
 }
 .logo{
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 22px;
@@ -47,12 +47,13 @@ body {
 
 .nav_list{
   list-style: none;
-  font-size: 28px;
+  font-size: 18px;
+  color: #fff;
 }
 
 .sidebar #btn{
   position: absolute;
-  color: #000;
+  color: #fff;
   left: 90%;
   top: 6px;
   font-size: 20px;
@@ -65,28 +66,27 @@ body {
 
 .sidebar ul{
   margin-top: 20px;
+  text-align: center;
 }
 
 .sidebar ul li{
   position: relative;
   display: inline-block;
-  height: 75px;
+  height: 50px;
   width: 100%;
-  margin: 0 5px;
-  list-style: none;
-  line-height: 45px;
-  text-align: center;
+  margin: 0 ,5px;
   text-transform: uppercase;
   cursor: pointer;
   overflow: hidden;
 }
 
 .sidebar ul li a{
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  transition: all 0.4s ease-in;
+  text-align: center;
+  transition: all 0.2s ease-in;
 }
 
 .sidebar ul li a i{
@@ -97,8 +97,8 @@ body {
 }
 
 .sidebar ul li a:hover{
-  color: #000;
-  font-size: 32px;
+  color: #fff;
+  font-size: 26px;
   letter-spacing: 1px;
   font-weight: bold;
 
@@ -106,20 +106,19 @@ body {
 
 .sidebar ul li svg{
   position: absolute;
-  top: 0; left: 0;
+  top: 0; left: 0; 
 }
 
 .sidebar ul li svg rect{
   fill: none;
-  stroke: #000;
-  stroke-width: 1;
+  stroke: #fff;
+  stroke-width: 1px;
   stroke-dasharray: 422, 0;
   transition: all 1300ms;
 }
 
-.sidebar:hover ul li svg rect{
-  stroke-width: 5;
+.sidebar ul li svg:hover rect{
+  stroke-width: 2.5px;
   stroke-dasharray: 10, 310;
   stroke-dashoffset: 33;
 } 
-
