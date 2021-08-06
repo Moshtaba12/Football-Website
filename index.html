@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,51 +10,53 @@
 </head>
 <body>
 
-    <div class="sidebar">
+    <div id = "mySidebar" class="sidebar" onmouseover = toggleSidebar() onmouseout = toggleSidebar()>
       <div class="logo_content">
         <div class="logo">
           <i class='bx bx-football' ></i>
           <div class="logo_name">Football</div>
         </div>
-        <i class='bx bx-menu' id ="btn" ></i>
+        <i class='bx bx-menu' id ="btn" ></i> 
       </div>
       <ul class="nav_list">
         <li>
-            <i class='bx bx-search-alt-2' ></i>
+            <i class='bx bx-search-alt-2' id = "searchBtn" ></i>
             <input type="text" placeholder="Search...">
-        <!---- <span class="tooltip">Dashboard</span> -->
         </li>
         <li>
           <a href="#">
             <i class='bx bx-log-in' ></i>
-              <svg>  <rect x="0" y="2" fill="none" width="200" height="45"/> </svg>
+              <svg>  <rect id = "navBox_1" x="0" y="2" fill="none" width="48" height="45"/> </svg>
               <span class="links_name">Log-in</span>
           </a>
-        <!---- <span class="tooltip">Dashboard</span> -->
         </li>
         <li>
           <a href="#">
             <i class='bx bxs-book-content'></i>
-            <svg>  <rect x="0" y="2" fill="none" width="200" height="45"/> </svg>
+              <svg>  <rect id = "navBox_2" x="0" y="2" fill="none" width="48" height="45"/> </svg>
             <span class="links_name">Sign-up</span>
           </a>
-        <!---- <span class="tooltip">Dashboard</span> -->
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pencil'></i>
+              <svg>  <rect id = "navBox_3" x="0" y="2" fill="none" width="48" height="45"/> </svg>
+            <span class="links_name">Book session</span>
+          </a>
         </li>
         <li>
           <a href="#">
             <i class='bx bxs-contact' ></i>
-            <svg>  <rect x="0" y="2" fill="none" width="200" height="45"/> </svg>
+              <svg>  <rect id = "navBox_4" x="0" y="2" fill="none" width="48" height="45"/> </svg>
             <span class="links_name">Contact us</span>
           </a>
-        <!---- <span class="tooltip">Dashboard</span> -->
         </li>
         <li>
           <a href="#">
             <i class='bx bx-question-mark' ></i>
-            <svg>  <rect x="0" y="2" fill="none" width="200" height="45"/> </svg>
+              <svg>  <rect id = "navBox_5" x="0" y="2" fill="none" width="48" height="45"/> </svg>
             <span class="links_name">About</span>
           </a>
-        <!---- <span class="tooltip">Dashboard</span> -->
         </li>
       </ul>
     </div>
@@ -61,6 +64,20 @@
   <div class="home_content">
     <div class="home_text">Home Page!</div>
   </div>
+
+  <!-- <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn1 = document.querySelector("#searchBtn");
+
+    btn.onmouseover = function(){
+      sidebar.classList.toggle("active")
+    }
+    searchBtn1.onmouseover = function(){
+      sidebar.classList.toggle("active")
+    }
+
+  </script> -->
 
 </body>
 </html>
