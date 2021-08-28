@@ -15,7 +15,7 @@ function toggleSidebar() {
   else{
     // console.log("Closing sidebar");
     document.getElementById("mySidebar").style.width = "78px";
-    document.getElementById("mySidebar").style.opacity = "50%"
+    document.getElementById("mySidebar").style.opacity = "70%"
     document.getElementById("navBox_1").style.width = "48px"
     document.getElementById("navBox_2").style.width = "48px"
     document.getElementById("navBox_3").style.width = "48px"
