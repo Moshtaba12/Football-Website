@@ -7,7 +7,7 @@
 body {
 	font-family: 'Encode Sans SC', sans-serif;
 	min-height: 100%;
-  height: 100%;
+	height: 100%;
 }
 
 .sidebar {
@@ -24,8 +24,7 @@ body {
 	z-index: 2;
 }
 
-
-.sidebar .logo_content .logo{
+.sidebar .logo_content .logo {
 	color: #fff;
 	display: flex;
 	height: 50px;
@@ -36,8 +35,7 @@ body {
 	pointer-events: none;
 }
 
-
-.logo_content .logo i{
+.logo_content .logo i {
 	font-size: 28px;
 	margin-right: 5px;
 	margin-left: 15px;
@@ -47,15 +45,12 @@ body {
 	margin-left: 10px;
 }
 
-
-
 .nav_list {
 	list-style: none;
 	font-size: 16px;
 	color: #fff;
 	text-align: left;
 }
-
 
 .sidebar ul {
 	margin-top: 20px;
@@ -135,7 +130,7 @@ body {
 	stroke-dasharray: 10, 310;
 	stroke-dashoffset: 33;
 }
-.media_contatiner{
+.media_contatiner {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
